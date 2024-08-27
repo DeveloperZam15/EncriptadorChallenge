@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALURA CHALLENGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h3>
+            Encriptador y desencriptador de texto
+        </h3>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="box">
+                <div>
+                    <textarea type="text" id="inputText" placeholder="Introduce texto aquí"></textarea>
+                </div>
+
+                <div>
+                    <label class="labelA"> > Solo texto en minúsculas y sin acentos! </label>
+                </div>
+
+                <div class="buttons">
+                    <button onclick="encryptText()">Encriptar</button>
+                    <button onclick="decryptText()">Desencriptar</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div id="outputPlaceholder">
+                    <img src="USE.png" alt="Sin texto" class="placeholder-image">
+                    
+                    <div class="divF">
+                        <label><h4>No hay ningun texto para cifrar o descifrar</h4></label>
+                    </div>
+
+                </div>
+
+                <div id="outputContainer" style="display: none;">
+                    <div>
+                         <textarea id="outputText" class="output-box" rows="5" readonly disabled></textarea>                   
+                    </div>
+
+                    <div>
+                        <label class="labelA"> No olvides copiar tu texto!</label>           
+                    </div>
+
+                    <div class="buttons">
+                        <button onclick="copyText()">Copiar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer><h4>Elaborado por Zamora Salinas Daniel (2024)</h4></footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
